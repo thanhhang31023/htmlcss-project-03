@@ -56,12 +56,11 @@ a {
 
 /* Header */
 .header {
-    position: sticky;
-    min-height: 100vh;
-    top: -30px;
-    padding-top: 30px;
+    padding-top: 19px;
     background: var(--header-bg);
+    position: sticky; 
     z-index: 1;
+    top: -19px;
 }
 
 .logo {
@@ -114,6 +113,7 @@ a {
 .header-top {
     display: flex;
     align-items: center;
+    padding: 12px 0;
     justify-content: space-between;
 }
 
@@ -168,9 +168,15 @@ a {
 
 /* Hero */
 .hero {
-    display: flex;
     align-items: center;
-    margin-top: 76px;
+    display: flex;
+    background: #10375C;
+    height: calc(100vh - 87px);
+}
+
+.hero .container__hero {
+    display: flex;
+    
 }
 
 .hero__content {
@@ -179,7 +185,8 @@ a {
 }
 
 .hero__media {
-    flex-grow: 1;
+    margin-top: -60px;
+     flex-grow: 1;
 }
 
 .hero__heading {
